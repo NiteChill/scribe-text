@@ -1,25 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import './default.scss';
+import ScribeText from './components/ScribeText/ScribeText';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <ScribeText msg='This animation was pretty tedious to do!' delay={150} />
     </div>
   );
 }
-
-export default App;
